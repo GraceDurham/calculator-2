@@ -16,3 +16,5 @@ while True:
     else:
         if tokens[0] == "pow":
             print power(int(tokens[1]), int(tokens[2]))
+        if tokens[0] == "+":
+            print add(int(tokens[1]), int(tokens[2]))
