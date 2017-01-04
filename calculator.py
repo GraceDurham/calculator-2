@@ -26,3 +26,5 @@ while True:
             print divide(int(tokens[1]), int(tokens[2]))
         if tokens[0] == "square":
             print square(int(tokens[1]))
+        if tokens[0] == "cube":
+            print cube(int(tokens[1]))
