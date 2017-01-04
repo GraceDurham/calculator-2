@@ -28,3 +28,5 @@ while True:
             print square(int(tokens[1]))
         if tokens[0] == "cube":
             print cube(int(tokens[1]))
+        if tokens[0] == "mod":
+            print mod(int(tokens[1]), int(tokens[2]))
