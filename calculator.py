@@ -24,3 +24,5 @@ while True:
             print multiply(int(tokens[1]), int(tokens[2]))
         if tokens[0] == "/":
             print divide(int(tokens[1]), int(tokens[2]))
+        if tokens[0] == "square":
+            print square(int(tokens[1]))
