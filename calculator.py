@@ -14,19 +14,21 @@ while True:
     if tokens[0] == "q":
         break
     else:
-        if tokens[0] == "pow":
+        if tokens[0] == "pow" and len(tokens) == 3:
             print power(int(tokens[1]), int(tokens[2]))
-        if tokens[0] == "+":
+        if tokens[0] == "+" and len(tokens) == 3:
             print add(int(tokens[1]), int(tokens[2]))
-        if tokens[0] == "-":
+        if tokens[0] == "-" and len(tokens) == 3:
             print subtract(int(tokens[1]), int(tokens[2]))
-        if tokens[0] == "*":
+        if tokens[0] == "*" and len(tokens) == 3:
             print multiply(int(tokens[1]), int(tokens[2]))
-        if tokens[0] == "/":
+        if tokens[0] == "/" and len(tokens) == 3:
             print divide(int(tokens[1]), int(tokens[2]))
-        if tokens[0] == "square":
+        if tokens[0] == "square" and len(tokens) == 2:
             print square(int(tokens[1]))
-        if tokens[0] == "cube":
+        if tokens[0] == "cube" and len(tokens) == 2:
             print cube(int(tokens[1]))
-        if tokens[0] == "mod":
+        if tokens[0] == "mod" and len(tokens) == 3:
             print mod(int(tokens[1]), int(tokens[2]))
+        else:
+            print "Invalid input please choose one of the following operators +, -, *, /, square, cube, pow, mod or check the number arguments. Enter q to quit."
