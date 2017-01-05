@@ -20,8 +20,8 @@ while True:
     
     elif tokens[0] == "pow" and len(tokens) == 3:
         print power(num_1,num_2)
-    elif tokens[0] == "+" and len(tokens) == 3 and type(tokens[1]) == int and type(tokens[2] == int):
-        print add(int(tokens[1]), int(tokens[2]))
+    elif tokens[0] == "+" and len(tokens) == 3:
+        print add(num_1, num_2)
     elif tokens[0] == "-" and len(tokens) == 3 and type(tokens[1]) == int and type(tokens[2] == int):
         print subtract(int(tokens[1]), int(tokens[2]))
     elif tokens[0] == "*" and len(tokens) == 3 and type(tokens[1]) == int and type(tokens[2] == int):
